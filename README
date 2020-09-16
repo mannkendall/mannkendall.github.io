@@ -1,0 +1,22 @@
+To generate the HTML files of the common mannkendall docs from the source,
+type the following in a terminal:
+
+cd <mannkendall path>
+sh build_docs.sh
+
+This will create all the pages in a new build folder.
+
+To actually generate a new version of the docs in order to push it to Github, one should first fetch
+the current docs, and only then re-generate the latest version.
+
+In other words:
+
+git clone https://github.com/mannkendall/mannkendall.github.io.git build
+
+sh build_docs.sh
+
+cd build
+
+git add -A .
+git commit -a -m "Update docs"
+git push origin gh-pages
