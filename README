@@ -11,12 +11,21 @@ the current docs, and only then re-generate the latest version.
 
 In other words:
 
-git clone https://github.com/mannkendall/mannkendall.github.io.git build
+# Clone the source files
+git clone --single-branch --branch master https://github.com/mannkendall/mannkendall.github.io.git
 
+# Move into it
+cd master
+
+# Clone the current published docs in a "build" directory
+git clone --single-branch --branch gh-pages https://github.com/mannkendall/mannkendall.github.io.git build
+
+# Generate the new docs by overwritting files
+# Note: does this actually "delete" old files as well ?
 sh build_docs.sh
 
+# Go into the newly build docs and push it live
 cd build
-
 git add -A .
 git commit -a -m "Update docs"
 git push origin gh-pages
