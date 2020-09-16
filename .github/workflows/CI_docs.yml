@@ -32,15 +32,9 @@ jobs:
           pip install sphinx-rtd-theme
         shell: bash
 
-      # Here, let's install our module to make sure all the dependencies specified in setup.py are
-      # also installed
-      - name: Install our module
-        run: pip install -e .
-        shell: bash
-
       # Launch a home-made python script to compile and check the docs.
       - name: Compile the docs and look for errors/warnings
         run: |
-          python ../.github/workflows/docs_check.py
+          python .github/workflows/docs_check.py
 
         shell: bash
