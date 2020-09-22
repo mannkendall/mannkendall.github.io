@@ -135,7 +135,7 @@ the high-level function of mannkendall:
 
     - The calculated S statistic is normally distributed for a number of observation N>10 and the
       significance of the trends is tested by comparing the standardized test statistic
-      Z=S/[var(S)]**0.5 with the standard normal variate at the desired significance level.
+      Z=S/[var(S)]^0.5 with the standard normal variate at the desired significance level.
       For N≤10, an exact S distribution is applied (see e.g., Gilbert, 1987). The default
       confidence level for the Mann-Kendall test (`alpha_MK`) is 95% in the mannkendall code.
     - Hirsch et al. (1982) extend the Mann-Kendall test to take temporal aggregation in the data
