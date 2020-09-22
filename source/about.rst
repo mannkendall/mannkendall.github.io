@@ -16,7 +16,11 @@ The adverse effect of the positive autocorrelation in time series on the number 
 Description of the prewhitening methods:
 
 Five different prewhitening methods can be chosen:
-1) PW: simple prewhitening method (Kulkarni and 
+1) PW: simple prewhitening method (Kulkarni and von Stroch, 1995). PW simply removes the lag-1 autocorrelation from the original data. This PW method results in a low amount of type 1 errors, but the existence of real trends, either positive or negative, can lead to an  over-/underestimation of  ak1data, which will reduces the power of the test. 
+2) TFPW_Y: trend free prewhitening method (Yue et al., 2002). TFPW_Y remove the autocorrelation on detrended data. TFPW_Y consists of:i) estimating the Sen’s slope βdata on the original data; ii) removing the trend to obtain a detrended time series; iii) removing the lag-1 autocorrelation to  generate a detrended prewhitened time series; and  iv) adding the trend back in to generate the processed time series to evaluate. TFPW-Y restores the power of the test, albeit at the expense of an increase of type 1 errors. 
+3) TFPW_WS: trend free prewhitening method (Wang and Swail, 2001). TFPW_WS is an iterative TFPW method to mitigate the adverse effect of trend on the accuracy of the lag-1 autocorrelation estimate. TFPW_WS consist of: : i) removing the lag-1 autocorrelation from the original time series and correcting the prewhitened data for the modified mean; ii) estimating the Sen’s slope on the prewhitened data; iii) removing the trend estimated on the PW data from the original data to obtain a prewhitened detrended time series; and iv) applying iteratively i-iii until the lag-a and slope differences become smaller than a proposed tiny threshold. TFPW_WS restores the low number of type 1 errors without decreasing the power of the test.
+4) VCTFPW: variance corrected trend free prewhitening method (Wang et al., 2015). VCTFPW aims order to correct TFPW-Y for both the elevated variance of slope estimators and for the decreased slope caused by the prewhitening. VCTFPW consists of:
+
 
 Application of the seasonal Mann-Kendall test:
 
@@ -28,10 +32,20 @@ The MK-test for trends is a non-parametric method based on rank.
 
 
 References:
+
+M. Collaud Coen, E. Andrews, G. Romanens, G. Martucci and L. Vuilleumier, Effects of the prewhitening method, the time granularity and the time segmentation on the Mann-Kendall trend detection and the associated Sen’s slope, Atm. Meas. Techn. Discuss., https://doi.org/10.5194/amt-2020-178 , submitted, 2020.
+
 Gilbert, R. O.: Statistical Methods for Environmental Pollution Monitoring, Van Nostrand Reinhold Company, New York, 1987.
+
 Hirsch, R. M., Slack, J. R., and Smith, R. A. : Techniques of trend analysis for monthly water quality data, Water Resour. Res., 18,107–121, 1982.
+
 Kulkarni, A., and von Storch, H.: Monte Carlo Experiments on the Effect of Serial Correlation on the Mann- Kendall Test of Trend Monte Carlo experiments on the effect, Meteorologische Zeitschrift, 82–85, 1995.
+
 Sirois, A.: A brief and biased overview of time-series analysis of how to find that evasive trend, WMO/EMEP Workshop on Advanced Statistical Methods and Their Application to Air Quality Data Sets, Annex E., Global Atmosphere Watch No. 133, TD- No. 956, World Meteorological Organization, Geneva, Switzerland, 1998.
+
 Wang, W., Chen, Y., Becker, S., and Liu, B.: Linear trend detection in serially dependent hydrometeorological data based on a variance correction Spearman rho method, Water, 7(12), 7045–7065. https://doi.org/10.3390/w7126673, 2015.
+
 Wang, X. L. and Swail, V. R: Changes of extreme wave heights in Northern Hemisphere oceans and related atmospheric circulation regimes, J. Climate, 14, 2204–2221, https://doi.org/10.1175/1520-0442(2001)014, 2001.
+
 Yue, S., Pilon, P., Phinney, B., and Cavadias, G.: The influence of autocorrelation on the ability to detect trend in hydrological series, Hydrol. Process., 16(9), 1807–1829. https://doi.org/10.1002/hyp.1095, 2002.
+
