@@ -17,7 +17,7 @@ What follows is a high-level -- **language-agnostic !** -- description of the ma
 
     For the specific usage instructions of mannkendall, see the:
 
-        * `matlab pages <https://mannkendall.github.io/matlab>`__
+        * `Matlab pages <https://mannkendall.github.io/Matlab>`__
         * `R pages <https://mannkendall.github.io/R>`__
         * `Python pages <https://mannkendall.github.io/Python>`__
 
