@@ -2,7 +2,7 @@ mannkendall
 ===========
 
 Welcome to the documentation of the mannkendall code.
-The code was initially written in matlab, and subsequently ported to R and Python. All three
+The code was initially written in Matlab, and subsequently ported to R and Python. All three
 versions have dedicated documentation pages describing their respective installation and use. For a
 high level, language-agnostic, description of the code, look at the
 :ref:`about:Spirit of mannkendall`.
@@ -32,7 +32,7 @@ functionalities.
 
     Home <self>
     about
-    matlab <https://mannkendall.github.io/matlab>
+    Matlab <https://mannkendall.github.io/Matlab>
     R <https://mannkendall.github.io/R>
     Python <https://mannkendall.github.io/Python>
     acknowledge
