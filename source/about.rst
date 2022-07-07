@@ -27,10 +27,11 @@ Summary
 The mannkendall code implements the Mann-Kendall statistical test associated with the Sen's slope,
 following the prescriptions of:
 
-*M. Collaud Coen, E. Andrews, G. Romanens, G. Martucci and L. Vuilleumier, Effects of the
-prewhitening method, the time granularity and the time segmentation on the Mann-Kendall trend
-detection and the associated Sen’s slope, Atm. Meas. Techn. Discuss., 2020*,
-https://doi.org/10.5194/amt-2020-178.
+*Collaud Coen, M., Andrews, E., Bigi, A., Martucci, G., Romanens, G., Vogt, F. P. A.,
+and Vuilleumier, L.: Effects of the prewhitening method, the time granularity, and the time
+segmentation on the Mann–Kendall trend detection and the associated Sen's slope,
+Atmos. Meas. Tech., 13, 6945–6964 (2020)*,
+https://doi.org/10.5194/amt-13-6945-2020.
 
 
 Introduction
@@ -159,10 +160,10 @@ the high-level function of mannkendall:
 References
 ----------
 
-*M. Collaud Coen, E. Andrews, G. Romanens, G. Martucci and L. Vuilleumier, Effects of the
-prewhitening method, the time granularity and the time segmentation on the Mann-Kendall trend
-detection and the associated Sen’s slope, Atm. Meas. Techn. Discuss., 2020.*
-https://doi.org/10.5194/amt-2020-178
+*Collaud Coen, M., Andrews, E., Bigi, A., Martucci, G., Romanens, G., Vogt, F. P. A.,
+and Vuilleumier, L.: Effects of the prewhitening method, the time granularity, and the time
+segmentation on the Mann–Kendall trend detection and the associated Sen's slope,
+Atmos. Meas. Tech., 13, 6945–6964, 2020*, https://doi.org/10.5194/amt-13-6945-2020.
 
 *Gilbert, R. O.: Statistical Methods for Environmental Pollution Monitoring, Van Nostrand Reinhold
 Company, New York, 1987.*
